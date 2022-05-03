@@ -18,7 +18,7 @@ builder.Services.AddDbContext<MindfulGiftDbContext>(
     opts => {
         opts.EnableSensitiveDataLogging();
         opts.EnableDetailedErrors();
-        opts.UseNpgsql(builder.Configuration.GetConnectionString("AppDb"));
+        opts.UseNpgsql(builder.Configuration.GetConnectionString("MindfulAppDb"));
     },
     ServiceLifetime.Transient
 );
