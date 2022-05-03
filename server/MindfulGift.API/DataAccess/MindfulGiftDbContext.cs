@@ -1,5 +1,4 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using MindfulGift.API.Models;
 
 namespace MindfulGift.API.DataAccess
 {
