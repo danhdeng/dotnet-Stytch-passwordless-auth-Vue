@@ -2,7 +2,7 @@
 
 namespace MindfulGift.API.Models.Stytch.MagicLinks
 {
-    public class StythMagicLinkAuthReponse
+    public class StytchMagicLinkAuthReponse
     {
         [JsonPropertyName("email_id")]
         public string EmailId { get; set; }
@@ -14,7 +14,7 @@ namespace MindfulGift.API.Models.Stytch.MagicLinks
         public string StatusCode { get; set; }
 
         [JsonPropertyName("user_created")]
-        public string UserCreated { get; set; }
+        public bool UserCreated { get; set; }
 
         [JsonPropertyName("user_id")]
         public string UserId { get; set; }

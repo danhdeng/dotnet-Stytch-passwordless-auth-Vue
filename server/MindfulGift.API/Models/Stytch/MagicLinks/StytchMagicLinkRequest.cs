@@ -2,7 +2,7 @@
 
 namespace MindfulGift.API.Models.Stytch.MagicLinks
 {
-    public class StythMagicLinkRequest
+    public class StytchMagicLinkRequest
     {
         [JsonPropertyName("email")]
         public string Email { get; set; }

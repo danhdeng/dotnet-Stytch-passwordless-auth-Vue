@@ -6,7 +6,7 @@ namespace MindfulGift.API.BusinessLogic.Auth
     {
         public Task<AuthResponse> SendMagicLink(string email);
         public Task<AuthResponse> AuthenticateMagicLink(string token);
-        public Task<StytchUserReposne> VerifySession(string sessionToken);
+        public Task<StytchUserRespone> VerifySession(string sessionToken);
 
 
     }
