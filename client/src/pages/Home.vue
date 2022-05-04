@@ -1,6 +1,4 @@
-<script setup lang="ts">
-// This starter template is using Vue 3 <script setup> SFCs
-// Check out https://vuejs.org/api/sfc-script-setup.html#script-setup
+<script>
 import { store } from '../store/store';
 import router from '../router';
 
@@ -11,7 +9,7 @@ export default {
       localStorage.removeItem('sessionToken');
       await router.push('/login');
     },
-    getImage(imageUrl: string) {
+    getImage(imageUrl) {
       return new URL(`../images/${imageUrl}`, import.meta.url).href;
     },
   },

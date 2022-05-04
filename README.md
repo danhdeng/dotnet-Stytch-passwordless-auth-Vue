@@ -41,3 +41,46 @@ dotnet tool update --global dotnet-ef
 # update database with the migrations
 
 dotnet ef database update
+
+# Tailwindcss setup referenced from
+
+https://tailwindcss.com/docs/guides/vite
+
+pnpm install -D tailwindcss postcss autoprefixer
+
+# to create tailwind.config.js and postcss.config.johnsoncodehk
+
+npx tailwindcss init -p
+
+# add the following to the tailwind.config.js
+
+```json
+module.exports = {
+  content: [
+    "./index.html",
+    "./src/**/*.{vue,js,ts,jsx,tsx}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+# add the following to postcss.config.js
+
+```json
+module.exports = {
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  }
+}
+```
+
+# added main.css to main.ts file
+
+import './main.css';
+const vm = createApp(App).use(router).use(store).mount('#app');
+
+export default vm;
